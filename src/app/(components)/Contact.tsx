@@ -8,13 +8,13 @@ const Contact = () => {
   return (
     <footer id="contact" className="flex">
       <Link href={"https://github.com/VanjaXYZ"} target="_blank">
-        <Image src={GithubIcon} width={150} height={150} alt="Github" />
+        <Image src={GithubIcon} width={80} height={80} alt="Github" />
       </Link>
       <Link
         href={"https://www.linkedin.com/in/vanja-sukurma-458905250/"}
         target="_blank"
       >
-        <Image src={LinkedinIcon} width={150} height={150} alt="LinkedIn" />
+        <Image src={LinkedinIcon} width={80} height={80} alt="LinkedIn" />
       </Link>
     </footer>
   );
