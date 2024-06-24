@@ -8,7 +8,7 @@ const HeaderLinks = () => {
         About
       </Link>
       <Link href={"#work"} className="font-bold tracking-widest">
-        Work
+        Projects
       </Link>
       <Link href={"#contact"} className="font-bold tracking-widest">
         Contact
