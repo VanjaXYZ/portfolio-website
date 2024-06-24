@@ -30,7 +30,7 @@ const AvatarImage = () => {
 export const AvatarImageMobile = () => {
   return (
     <motion.picture
-      className="flex lg:hidden relative"
+      className="flex lg:hidden relative py-12"
       initial={{ opacity: 0, scale: 0.1 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{
