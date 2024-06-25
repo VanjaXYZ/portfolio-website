@@ -1,4 +1,6 @@
 import React from "react";
+import ProjectCard from "./ProjectCard";
+import { Projects } from "../_lib/types";
 
 const Work = () => {
   const projects = [
@@ -34,7 +36,9 @@ const Work = () => {
   return (
     <section id="work" className="flex flex-col w-full space-y-6">
       <h2 className="text-2xl font-bold text-start">Projects</h2>
-      <article></article>
+      {projects.map((project: Projects) => (
+        <ProjectCard project={project} />
+      ))}
     </section>
   );
 };
