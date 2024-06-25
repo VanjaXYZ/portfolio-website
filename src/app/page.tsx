@@ -1,6 +1,7 @@
 import About from "./(components)/About";
 import AvatarImage from "./(components)/AvatarImage";
 import Contact from "./(components)/Contact";
+import DownloadCVButton from "./(components)/DownloadCVButton";
 import GreetingMessage from "./(components)/GreetingMessage";
 import { MobileHeader } from "./(components)/Header";
 import Work from "./(components)/Work";
@@ -14,6 +15,7 @@ export default function Home() {
         <AvatarImage />
       </section>
       <Work />
+      <DownloadCVButton />
       <Contact />
       <MobileHeader />
     </main>
