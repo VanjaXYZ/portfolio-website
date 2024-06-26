@@ -6,7 +6,7 @@ import clsx from "clsx";
 
 const ProjectCard = ({ project }: { project: Projects }) => {
   return (
-    <div className="py-2 border rounded-md px-1 w-full max-w-md flex flex-col group cursor-pointer gap-2">
+    <div className="py-2 border rounded-md px-1 w-full max-w-md flex flex-col group cursor-pointer gap-2 h-64 overflow-y-auto">
       <h5 className="text-lg underline">{project.title}</h5>
       <em>{project.short_description}</em>
       <ul className="flex flex-wrap gap-2 my-2">
@@ -19,17 +19,21 @@ const ProjectCard = ({ project }: { project: Projects }) => {
           </li>
         ))}
       </ul>
-      <span className="bg-white/5 rounded-md px-1 w-fit group-hover:bg-slate-500">
-        {project.type}
-      </span>
+      <div className="flex-grow">
+        <span className="bg-white/5 rounded-md p-1 w-fit group-hover:bg-slate-500">
+          {project.type}
+        </span>
+      </div>
       <span
         className={clsx(
           "w-fit rounded-md px-1 group-hover:bg-slate-500 self-end",
           {
-            "text-yellow-300": project.status === "In progress",
+            "bg-yellow-300 text-slate-900 uppercase font-semibold":
+              project.status === "In progress",
           },
           {
-            "text-green-400": project.status === "Completed",
+            "bg-green-400 text-white font-semibold uppercase":
+              project.status === "Completed",
           }
         )}
       >
