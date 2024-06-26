@@ -34,11 +34,13 @@ const Work = () => {
     },
   ];
   return (
-    <section id="work" className="flex flex-col w-full space-y-6">
+    <section id="work" className="w-full space-y-6">
       <h2 className="text-2xl font-bold text-start">Projects</h2>
-      {projects.map((project: Projects) => (
-        <ProjectCard project={project} />
-      ))}
+      <div className="flex flex-col gap-4 md:flex-row flex-wrap">
+        {projects.map((project: Projects) => (
+          <ProjectCard project={project} />
+        ))}
+      </div>
     </section>
   );
 };
