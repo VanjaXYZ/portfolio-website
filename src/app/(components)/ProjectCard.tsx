@@ -32,11 +32,11 @@ const ProjectCard = ({ project }: { project: Projects }) => {
         className={clsx(
           "w-fit rounded-md px-1 group-hover:bg-slate-500 self-end",
           {
-            "bg-yellow-300 text-slate-900 uppercase font-semibold":
+            "border border-yellow-400 uppercase font-semibold":
               project.status === "In progress",
           },
           {
-            "bg-green-400 text-white font-semibold uppercase":
+            "border-green-400 border font-semibold uppercase":
               project.status === "Completed",
           }
         )}
