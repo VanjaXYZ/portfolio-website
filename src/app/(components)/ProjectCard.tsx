@@ -9,28 +9,23 @@ const ProjectCard = ({ project }: { project: Projects }) => {
   return (
     <Link
       href={`/projects/${project?.id}`}
-      className="py-2 border rounded-md px-1 w-full max-w-md flex flex-col group cursor-pointer gap-2 h-64 overflow-y-auto"
+      className="py-2 border rounded-md px-1 w-full max-w-md flex flex-col group cursor-pointer gap-2 h-64 hover:bg-white/5 overflow-y-auto"
     >
       <h5 className="text-lg underline">{project.title}</h5>
       <em>{project.short_description}</em>
       <ul className="flex flex-wrap gap-2 my-2">
         {project.tech.map((tech: string) => (
-          <li
-            key={tech}
-            className="bg-white/5 rounded-md px-1 group-hover:bg-slate-500"
-          >
+          <li key={tech} className="bg-white/5 rounded-md px-1 ">
             {tech}
           </li>
         ))}
       </ul>
       <div className="flex-grow">
-        <span className="bg-white/5 rounded-md p-1 w-fit group-hover:bg-slate-500">
-          {project.type}
-        </span>
+        <span className="bg-white/5 rounded-md p-1 w-fit ">{project.type}</span>
       </div>
       <span
         className={clsx(
-          "w-fit rounded-md px-1 group-hover:bg-slate-500 self-end",
+          "w-fit rounded-md px-1  self-end",
           {
             "border border-yellow-400 uppercase font-semibold":
               project.status === "In progress",
