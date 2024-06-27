@@ -1,12 +1,16 @@
 import React from "react";
 import { Projects } from "../_lib/types";
 import clsx from "clsx";
+import Link from "next/link";
 
 // postavi kao linkove
 
 const ProjectCard = ({ project }: { project: Projects }) => {
   return (
-    <div className="py-2 border rounded-md px-1 w-full max-w-md flex flex-col group cursor-pointer gap-2 h-64 overflow-y-auto">
+    <Link
+      href={`/${project?.id}`}
+      className="py-2 border rounded-md px-1 w-full max-w-md flex flex-col group cursor-pointer gap-2 h-64 overflow-y-auto"
+    >
       <h5 className="text-lg underline">{project.title}</h5>
       <em>{project.short_description}</em>
       <ul className="flex flex-wrap gap-2 my-2">
@@ -39,7 +43,7 @@ const ProjectCard = ({ project }: { project: Projects }) => {
       >
         {project.status}
       </span>
-    </div>
+    </Link>
   );
 };
 
