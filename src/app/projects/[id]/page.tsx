@@ -24,8 +24,11 @@ const Page = ({ params }: any) => {
             <p className="flex gap-4 flex-col">
               <strong className="text-xl">Technologies:</strong>
               <div className="grid grid-cols-4 w-fit gap-2 uppercase">
-                {project.tech.map((tech: string) => (
-                  <span className="font-semibold p-2 bg-white/5 rounded-md text-sm sm:text-base">
+                {project.tech.map((tech: string, index: number) => (
+                  <span
+                    key={`${tech}-${index}`}
+                    className="font-semibold p-2 bg-white/5 rounded-md text-sm sm:text-base"
+                  >
                     {tech}
                   </span>
                 ))}
