@@ -5,7 +5,9 @@ import Link from "next/link";
 const Header = () => {
   return (
     <header className="justify-between px-12 py-2 sticky top-0 bg-black/90 sm:flex hidden z-10">
-      <p className="font-bold uppercase">Vanja Šukurma</p>
+      <Link href={"/"} className="font-bold uppercase">
+        Vanja Šukurma
+      </Link>
       <HeaderLinks />
     </header>
   );
