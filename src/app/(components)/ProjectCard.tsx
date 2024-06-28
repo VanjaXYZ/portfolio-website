@@ -20,17 +20,19 @@ const ProjectCard = ({ project }: { project: Projects }) => {
       className="py-2 border rounded-md px-1 w-full max-w-md flex flex-col group cursor-pointer gap-2 overflow-y-auto"
     >
       <Link href={`/projects/${project?.id}`} className="flex flex-col h-64">
-        <h5 className="text-lg underline">{project.title}</h5>
-        <em>{project.short_description}</em>
-        <ul className="flex flex-wrap gap-2 my-2">
+        <h5 className="text-2xl font-bold">{project.title}</h5>
+        <p className="text-neutral-100 font-light underline underline-offset-2">
+          {project.short_description}
+        </p>
+        <ul className="flex flex-wrap gap-2 my-5">
           {project.tech.map((tech: string) => (
-            <li key={tech} className="bg-white/5 rounded-md px-1 ">
+            <li key={tech} className="bg-white/5 rounded-md px-1 font-semibold">
               {tech}
             </li>
           ))}
         </ul>
         <div className="flex-grow">
-          <span className="bg-white/5 rounded-md p-1 w-fit ">
+          <span className="bg-white/5 rounded-md p-1 w-fit font-semibold">
             {project.type}
           </span>
         </div>
