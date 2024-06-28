@@ -9,10 +9,15 @@ const ProjectCard = ({ project }: { project: Projects }) => {
   return (
     <motion.div
       initial={{ rotate: "0deg", opacity: 0 }}
-      whileHover={{ scale: 1.05, rotate: "2.5deg" }}
+      whileHover={{
+        scale: 1.05,
+        rotate: "2.5deg",
+        backgroundColor: "#555555",
+      }}
+      animate={{ backgroundColor: "#000000" }}
       whileTap={{ scale: 0.93 }}
       whileInView={{ opacity: 1, transition: { duration: 2 } }}
-      className="py-2 border rounded-md px-1 w-full max-w-md flex flex-col group cursor-pointer gap-2 hover:bg-white/5 overflow-y-auto"
+      className="py-2 border rounded-md px-1 w-full max-w-md flex flex-col group cursor-pointer gap-2 overflow-y-auto"
     >
       <Link href={`/projects/${project?.id}`} className="flex flex-col h-64">
         <h5 className="text-lg underline">{project.title}</h5>
