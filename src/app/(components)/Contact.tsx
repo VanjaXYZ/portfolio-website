@@ -8,8 +8,8 @@ const Contact = () => {
     <footer id="contact" className="flex space-x-12">
       <motion.span
         className="bg-white/5 p-2 rounded-md flex items-center justify-center"
-        whileHover={{ x: "50%", scale: 1.05 }}
-        whileTap={{ opacity: 0, y: "-80%" }}
+        whileHover={{ x: "25%", scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
       >
         <Link href={"https://github.com/VanjaXYZ"} target="_blank">
           <Github size={40} />
@@ -17,8 +17,8 @@ const Contact = () => {
       </motion.span>
       <motion.span
         className="bg-white/5 p-2 rounded-md flex items-center justify-center"
-        whileHover={{ x: "-50%", scale: 1.05 }}
-        whileTap={{ opacity: 0, y: "-80%" }}
+        whileHover={{ x: "-25%", scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
       >
         <Link
           href={"https://www.linkedin.com/in/vanja-sukurma-458905250/"}
