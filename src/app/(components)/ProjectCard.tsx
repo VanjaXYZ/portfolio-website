@@ -26,17 +26,20 @@ const ProjectCard = ({ project }: { project: Projects }) => {
         </p>
         <ul className="flex flex-wrap gap-2 my-5">
           {project.tech.map((tech: string) => (
-            <li key={tech} className="bg-white/5 rounded-md px-1 font-semibold">
+            <li
+              key={tech}
+              className="bg-white/5 rounded-md px-1 text-lg font-semibold"
+            >
               {tech}
             </li>
           ))}
         </ul>
         <div className="flex-grow">
-          <span className="bg-white/5 rounded-md p-1 w-fit font-semibold">
+          <span className="bg-white/5 rounded-md p-1 w-fit text-lg font-semibold">
             {project.type}
           </span>
         </div>
-        <span
+        {/* <span
           className={clsx(
             "w-fit rounded-md px-1  self-end",
             {
@@ -50,7 +53,7 @@ const ProjectCard = ({ project }: { project: Projects }) => {
           )}
         >
           {project.status}
-        </span>
+        </span> */}
       </Link>
     </motion.div>
   );
