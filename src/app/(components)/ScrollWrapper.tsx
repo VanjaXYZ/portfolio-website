@@ -13,7 +13,7 @@ const ScrollWrapper = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <motion.div
-        className={`sticky top-10 w-full h-2 origin-left z-10`}
+        className={`sticky top-0 sm:top-10 w-full h-2 origin-left z-10`}
         style={{ scaleX, background }}
       />
       {children}
