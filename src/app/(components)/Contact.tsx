@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <footer id="contact" className="flex space-x-12">
+    <footer id="contact" className="flex space-x-12 bg-black">
       <motion.span
         className="bg-white/5 p-2 rounded-md flex items-center justify-center"
         whileHover={{ x: "25%", scale: 1.05 }}

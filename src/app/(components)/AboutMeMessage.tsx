@@ -18,7 +18,7 @@ const AboutMeMessage = () => {
   return (
     <motion.p
       ref={ref}
-      className="xl:text-xl text-sm tracking-wider lg:text-lg"
+      className="xl:text-xl text-sm tracking-wider lg:text-lg bg-black"
       initial="hidden"
       whileInView="reveal"
       transition={{ staggerChildren: isInView ? 0 : 0.01 }}

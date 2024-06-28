@@ -8,7 +8,7 @@ import Work from "./(components)/Work";
 export default function Home() {
   return (
     <ScrollWrapper>
-      <main className="flex min-h-screen flex-col items-center justify-between p-2 sm:p-24 space-y-10 relative">
+      <main className="flex min-h-screen flex-col items-center justify-between p-2 sm:p-24 space-y-10 relative bg-black">
         {/* <GreetingMessage /> */}
         <section className="flex w-full justify-center">
           <About />
