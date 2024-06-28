@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import AvatarImg from "../assets/avatar_no_background.png";
 import MessageBubble from "./MessageBubble";
+import GreetingMessage from "./GreetingMessage";
 
 const AvatarImage = () => {
   return (
@@ -23,6 +24,7 @@ const AvatarImage = () => {
         alt="Avatar image"
         className="rounded-full overflow-hidden drop-shadow-[0_35px_35px_rgba(255,255,255,0.1)]"
       />
+      <GreetingMessage />
     </motion.section>
   );
 };
