@@ -8,10 +8,10 @@ const AvatarImage = () => {
   return (
     <motion.section
       className="h-fit justify-center w-full items-center hidden lg:flex"
-      initial={{ opacity: 0, scale: 0.1 }}
-      animate={{ opacity: 1, scale: 1 }}
+      initial={{ opacity: 0, scale: 0.1, rotateY: "0deg", perspective: 1000 }}
+      animate={{ opacity: 1, scale: 1, rotateY: "360deg" }}
       transition={{
-        duration: 0.3,
+        duration: 2.25,
         delay: 0.1,
         ease: [0, 0.71, 0.2, 1.01],
       }}
