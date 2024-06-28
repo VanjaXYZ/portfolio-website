@@ -5,11 +5,16 @@ import { motion } from "framer-motion";
 
 const GreetingMessage = () => {
   return (
-    <section className="flex space-x-4 items-center">
-      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-        <Hand size={32} className="hover:cursor-grab" />
+    <section className="flex space-x-4 items-center select-none">
+      <motion.div
+        initial={{ rotate: "-20deg" }}
+        whileHover={{ scale: 1.3 }}
+        whileTap={{ scale: 1.15, rotate: "0deg" }}
+        transition={{ duration: 0.25 }}
+      >
+        <Hand size={40} className="hover:cursor-grab" />
       </motion.div>
-      <p className="text-xl">give me five !</p>
+      <p className="text-xl">Give me five!</p>
     </section>
   );
 };
