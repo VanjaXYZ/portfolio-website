@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const GreetingMessage = () => {
   return (
-    <section className="flex flex-col xl:flex-row justify-center space-x-2 items-center select-none w-56 absolute left-[70%]">
+    <section className="flex flex-col xl:flex-row justify-center space-x-2 items-center select-none w-56 absolute left-[70%] text-white">
       <motion.div
         initial={{ rotate: "-20deg" }}
         whileHover={{ scale: 1.3 }}

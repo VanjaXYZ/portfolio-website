@@ -17,7 +17,7 @@ const ProjectCard = ({ project }: { project: Projects }) => {
       animate={{ backgroundColor: "#000000" }}
       whileTap={{ scale: 0.93 }}
       whileInView={{ opacity: 1, transition: { duration: 2 } }}
-      className="py-2 border rounded-md px-1 w-full max-w-md flex flex-col group cursor-pointer gap-2 overflow-y-auto"
+      className="py-2 border rounded-md px-1 w-full max-w-md flex flex-col group cursor-pointer gap-2 overflow-y-auto text-white"
     >
       <Link href={`/projects/${project?.id}`} className="flex flex-col h-64">
         <h5 className="text-2xl font-bold">{project.title}</h5>
