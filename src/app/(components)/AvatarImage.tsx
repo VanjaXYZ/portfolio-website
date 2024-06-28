@@ -8,7 +8,7 @@ import GreetingMessage from "./GreetingMessage";
 const AvatarImage = () => {
   return (
     <motion.section
-      className="h-fit justify-center w-full items-center hidden lg:flex"
+      className="h-fit justify-center w-full items-center hidden lg:flex relative"
       initial={{ opacity: 0, scale: 0.1, rotateY: "0deg", perspective: 1000 }}
       animate={{ opacity: 1, scale: 1, rotateY: "360deg" }}
       transition={{
