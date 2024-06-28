@@ -2,8 +2,6 @@ import About from "./(components)/About";
 import AvatarImage from "./(components)/AvatarImage";
 import Contact from "./(components)/Contact";
 import DownloadCVButton from "./(components)/DownloadCVButton";
-import GreetingMessage from "./(components)/GreetingMessage";
-import { MobileHeader } from "./(components)/Header";
 import ScrollWrapper from "./(components)/ScrollWrapper";
 import Work from "./(components)/Work";
 
