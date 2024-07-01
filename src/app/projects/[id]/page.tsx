@@ -44,6 +44,16 @@ const Page = ({ params }: any) => {
                   </motion.span>
                 ))}
               </div>
+              <p>
+                Link to website:{" "}
+                <Link
+                  className="underline"
+                  href={(project?.link as string) || "/"}
+                  target="_blank"
+                >
+                  {project?.link || "Not deployed..."}
+                </Link>
+              </p>
             </div>
           </article>
           <article>{project.complete_description}</article>
