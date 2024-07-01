@@ -6,4 +6,5 @@ export type Projects = {
   complete_description: string;
   tech: string[];
   status: string;
+  link?: string;
 };
