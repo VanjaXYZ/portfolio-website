@@ -8,6 +8,7 @@ export const projects = [
       "Online Book Library je sveobuhvatna aplikacija koja omogućava korisnicima da kreiraju i upravljaju svojim digitalnim bibliotekama. Korisnici mogu dodavati knjige, uređivati informacije o knjigama, pratiti svoj napredak u čitanju i deliti preporuke sa prijateljima. Aplikacija koristi Next.js 14 za brzu i efikasnu izradu frontend dela, dok Nest.js obezbeđuje robustnu i skalabilnu backend arhitekturu. Tailwind CSS je korišćen za kreiranje responzivnog i atraktivnog korisničkog interfejsa. Ovaj projekat predstavlja kompletno rešenje za sve ljubitelje knjiga koji žele da organizuju i uživaju u svojoj kolekciji na mreži.",
     tech: ["Next.js 14", "Nest.js", "Tailwind CSS"],
     status: "Completed",
+    link: "https://adders-library.vercel.app/",
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ export const projects = [
       "My AI Diary je inovativna aplikacija koja koristi veštačku inteligenciju kako bi pomogla korisnicima da pišu i organizuju svoje dnevničke zapise. Ova aplikacija omogućava korisnicima da lako beleže svoje misli, osećanja i događaje iz svakodnevnog života, uz pomoć AI asistenta koji pruža sugestije, analizira emocije i predlaže poboljšanja. Sa Next.js 14, frontend je brz i responzivan, dok Nest.js osigurava snažnu backend podršku. shadCn i Tailwind CSS su korišćeni za moderni i privlačni dizajn korisničkog interfejsa. Ovaj projekat je idealan za sve koji žele da unaprede svoje pisanje i bolje razumeju sebe kroz interaktivne i inteligentne sugestije.",
     tech: ["Next.js 14", "Nest.js", "shadCn", "Tailwind CSS"],
     status: "In progress",
+    link: "https://my-diary-ai.vercel.app/",
   },
   {
     id: 3,
