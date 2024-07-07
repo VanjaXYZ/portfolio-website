@@ -51,7 +51,7 @@ const Page = ({ params }: any) => {
                   href={(project?.link as string) || "/"}
                   target="_blank"
                 >
-                  {project?.link || "Not deployed..."}
+                  {project?.link || ""}
                 </Link>
               </p>
             </div>
